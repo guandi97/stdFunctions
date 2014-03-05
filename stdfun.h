@@ -38,11 +38,10 @@ int strsize(char *str,char delim)
 }
 int ascint(char *str)
 {
-	int i,j=0;
+	int i=0,j=0;
 	const int k=sterlen(str,0x0)-1;
 	int l=k;
 	{
-		i=0;
 		if(*str=='-') i=1;
 		for(i=i;i<k;i++)
 		{
@@ -55,7 +54,8 @@ int ascint(char *str)
 }
 int intasc(int source,char *dest)
 {
-	int i,j;
+	int i,c,j;
+		
 	return j;
 }
 int ungReadi(int fd,char *buff,size_t size)
@@ -66,7 +66,6 @@ int ungReadi(int fd,char *buff,size_t size)
 	if(i<size) return i;
 	else 
 	{
-		printf("lolz\n");
 		if(buff[i-1]!=0xa) while(read(fd,dump,UNGREADIBUFF)>=UNGREADIBUFF);
 	}
 
