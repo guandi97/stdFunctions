@@ -16,3 +16,7 @@
 *.exe
 *.out
 *.app
+
+#debug
+lol.c
+lol
